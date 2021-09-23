@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    height: 100vh;  
+    overflow: hidden;
+    background-image: url("./assets/img/background_woman.png");
+    background-size: cover; 
+    background-position: center center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.logo-nubank {
+    height: 45px;
+    width: 45px;
+    padding: 22px 0 0 32px
+}
+
+.main {
+    position: absolute;
+    width: 100%;
+    height: 302px;  
+    top: 50%;
+    transform: translate(0%, -50%);   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left {
+    margin-left: 56px;
+    max-width: 38%;
+}
+
+.right {
+    background-color: rgb(255, 255, 255);  
+    width: 330px;
+    height: 100%;
+    border-radius: 1rem;
+    margin-right: 56px; 
+}
+
+#frase_left{
+    margin: 0;
+    text-align: left;
+    font-size: 3rem;
+    font-family: 'Raleway', sans-serif;
+    color: white;   
+}
+
+.box_dados{
+    margin: 27px 24px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 24px;
+    color: black;
+}
+
+.div_CPF {
+    margin-top: 55px;
+    color: rgb(88 88 88);
+    display: flex;
+}
+
+#CPF {
+    outline: 0;
+    padding: 6px;
+    border-color: #b1b1b1c0;
+    border-width: 0 0 1px 0;        
+    width: 100%;
+    font-size: 18px;
+}
+
+#CPF:hover{
+    border-color: black;
+}
+
+#label_CPF {
+    position: absolute;
+    margin-top: 6px;
+    font-size: 14px;
+    font-weight: bolder;
+    transition: 0.2s;
+}
+
+#CPF:focus + label {
+    margin-top: -16px;
+    font-size: 12px;
+}
+
+#CPF:valid + label {
+    margin-top: -16px;
+    font-size: 12px;
+}
+
+.div_continuar {
+    background-color: rgb(231 231 231);
+    color: rgb(188 188 188);
+    padding: 12px 0;
+    margin-top: 40px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.2s;
+}
+
+#continuar{
+    background-color: inherit;
+    color: inherit;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    margin-left: 20px;
+    text-align: left;
+    font-size: 16px;
+}
+
+#seta {
+    background-color: inherit;
+    color: inherit;
+    margin: 0 20px 0 0;
+    text-align: right;  
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.div_continuar:hover {
+    background-color: #820AD1;
+    color: white;
+    cursor: pointer;
+}
